@@ -1,0 +1,187 @@
+:root {
+  --clr-nutmeg: hsl(14, 45%, 36%);
+  --clr-dark-raspberry: hsl(332, 51%, 32%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-rose-white: hsl(330, 100%, 98%);
+  --clr-eggshell: hsl(30, 54%, 90%);
+  --clr-white-coffee: hsl(30, 18%, 87%);
+  --clr-wenge-brown: hsl(30, 10%, 34%);
+  --clr-dark-charcoal: hsl(24, 5%, 18%);
+
+  --ff-accent: "Young Serif", serif;
+  --ff-base: "Outfit", sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+  color: var(--clr-wenge-brown);
+  background-color: var(--clr-eggshell);
+}
+
+h1, h2 {
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-regular);
+}
+
+h1 {
+  font-size: 2.25rem;
+  color: var(--clr-dark-charcoal);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: var(--clr-nutmeg);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-dark-raspberry);
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  padding-left: 1rem;
+}
+
+ul li,
+ol li {
+  margin-bottom: 8px;
+}
+
+li {
+  padding-left: 1rem;
+}
+
+ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+span {
+  font-weight: var(--fw-bold);
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--clr-white-coffee);
+}
+
+.recipe {
+  background-color: var(--clr-white);
+}
+
+.recipe-info {
+  padding: 2rem;
+}
+
+.recipe__preparation-time {
+  background-color: var(--clr-rose-white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.recipe__preparation-time li::marker {
+  color: var(--clr-dark-raspberry);
+}
+
+.recipe__ingredients li::marker {
+  color: var(--clr-nutmeg)
+}
+
+.recipe__instructions li::marker {
+  color: var(--clr-nutmeg);
+  font-weight: var(--fw-bold);
+}
+
+table {
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+}
+
+table span {
+  color: var(--clr-nutmeg);
+}
+
+tr {
+  border-top: 1px solid var(--clr-white-coffee);
+  padding-top: rem;
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+td {
+  border: none;
+  padding: 1rem;
+}
+
+
