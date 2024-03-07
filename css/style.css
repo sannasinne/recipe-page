@@ -134,7 +134,7 @@ hr {
   background-color: var(--clr-white);
 }
 
-.recipe-info {
+.recipe__info {
   padding: 2rem;
 }
 
@@ -184,4 +184,25 @@ td {
   padding: 1rem;
 }
 
+@media (min-width: 736px) {
+  .recipe {
+    max-width: 736px;
+    margin: auto;
+    margin-top: 124px;
+    margin-bottom: 124px;
+    border-radius: 24px;
+  }
 
+  .recipe__image,
+  .recipe__info {
+    padding: 40px 40px 0 40px;
+  }
+
+  .recipe__info {
+    padding-bottom: 40px;
+  }
+
+  .recipe__image-img {
+    border-radius: 12px;
+  }
+}
